@@ -1,0 +1,21 @@
+{
+  "name": "mapbox_turf_rails",
+  "private": true,
+  "dependencies": {
+    "@hotwired/turbo": "^7.0.0-rc.1",
+    "@hotwired/turbo-rails": "^7.0.0-rc.1",
+    "@rails/actioncable": "^6.0.0",
+    "@rails/activestorage": "^6.0.0",
+    "@rails/ujs": "^6.0.0",
+    "@rails/webpacker": "^5.4.0",
+    "@turf/circle": "^6.5.0",
+    "@turf/turf": "^6.5.0",
+    "mapbox-gl": "^2.3.1",
+    "turf": "^3.0.14",
+    "yarn": "^1.22.11"
+  },
+  "version": "0.1.0",
+  "devDependencies": {
+    "webpack-dev-server": "^1.16.5"
+  }
+}

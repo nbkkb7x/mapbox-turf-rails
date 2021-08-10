@@ -1,0 +1,33 @@
+.row 
+  %p#notice= notice
+  %p
+    %b Name:
+    = @office.name
+  %p
+    %b Address 1:
+    = @office.address_1
+  %p
+    %b Address 2:
+    = @office.address_2
+  %p
+    %b City:
+    = @office.city
+  %p
+    %b State:
+    = @office.state
+  %p
+    %b Zipcode:
+    = @office.zipcode
+  %p
+    %b Full address:
+    = @office.full_address
+  %p
+    %b Lat:
+    = @office.latitude
+  %p
+    %b Long:
+    = @office.longitude
+
+  = link_to 'Edit', edit_office_path(@office)
+  \|
+  = link_to 'Back', offices_path

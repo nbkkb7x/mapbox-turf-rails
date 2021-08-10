@@ -1,0 +1,28 @@
+= form_with model: @office do |f|
+  - if @office.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@office.errors.count, "error")} prohibited this office from being saved:"
+      %ul
+        - @office.errors.full_messages.each do |message|
+          %li= message
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :address_1
+    = f.text_field :address_1
+  .field
+    = f.label :address_2
+    = f.text_field :address_2
+  .field
+    = f.label :city
+    = f.text_field :city
+  .field
+    = f.label :state
+    = f.text_field :state
+  .field
+    = f.label :zipcode
+    = f.text_field :zipcode
+  .actions
+    = f.submit 'Save'

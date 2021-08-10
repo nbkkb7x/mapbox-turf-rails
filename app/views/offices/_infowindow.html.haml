@@ -1,0 +1,8 @@
+.infowindow
+  %h6= office.name
+  %span
+    %p Additional Offices
+    - office.within_radius.each do |attr|
+      - if attr['id'] == office.id
+      - else 
+        %li= attr["name"]
